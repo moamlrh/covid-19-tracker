@@ -1,0 +1,101 @@
+body {
+  background-color: #15202b;
+  --twitter-background: "#15202b";
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+}
+.app {
+  display: flex !important;
+  background-color: #15202b;
+}
+.app-sidebar-left {
+  color: white;
+}
+.app-posts {
+  color: white;
+  max-width: 700px;
+  border: 1px solid rgba(134, 134, 134, 0.465);
+  border-top: 0;
+  border-bottom: 0;
+}
+.app-sidebar-right {
+  color: white;
+  max-width: 320px;
+}
+.header-and-create-post {
+  display: flex;
+  top: 0;
+  position: sticky;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  border-bottom: 1px solid #38444d;
+  border-right: 1px solid #38444d;
+  border-left: 1px solid #38444d;
+  padding: 10px;
+  background-color: #15202b;
+  z-index: 100;
+}
+.show-sidebar-left-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 1400px) {
+  .app-sidebar-right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .app {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .app {
+    font-size: 13px;
+  }
+  .sidebar-left {
+    background-color: rgb(54, 54, 54) !important;
+    width: 250px !important;
+    position: fixed !important;
+    z-index: 1009;
+    height: 100vh;
+    transition: left 0.5s;
+    left: -400px;
+  }
+  .app-posts {
+    min-width: 450px;
+  }
+  .show-sidebar-left-icon {
+    display: inline !important;
+    font-size: 200px !important;
+    z-index: 10000;
+    position: fixed;
+    bottom: -40px;
+    left: 200px;
+    margin-bottom: 20px;
+  }
+  .show-sidebar-left-icon > #icon {
+    font-size: 45px;
+    color: white;
+    left: -200px;
+    position: relative !important;
+    border-radius: 50% !important;
+    background-color: #007a8350;
+    padding: 5px;
+    transition: 0.6s;
+    box-shadow: 15px 10px 20px rgba(0, 0, 0, 0.712);
+  }
+  #shadow-div {
+    background-color: rgba(0, 0, 0, 0.486);
+    top: 0;
+    width: 150%;
+    height: 100%;
+    z-index: 999;
+    position: fixed;
+    display: none;
+  }
+}

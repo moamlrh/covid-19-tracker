@@ -1,0 +1,121 @@
+.posts {
+  min-width: fit-content;
+  overflow-y: scroll;
+}
+.posts::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.posts {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.post-with-image {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(119, 119, 119);
+}
+.post-with-image:hover {
+  background-color: rgba(88, 88, 88, 0.123);
+  cursor: pointer;
+}
+.post-info {
+  display: flex;
+  margin: 10px;
+}
+.post-avatar-div {
+  margin-right: 15px;  
+
+}
+.link-post-avatar{
+  height: 40px;
+  width: 45px;
+}
+
+.post-body {
+  margin: 5px 0px 5px 5px;
+  width: 100%;
+}
+.post-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.post-header > .header-icon {
+  display: flex;
+  justify-self: flex-end;
+}
+.post-header > .header-icon {
+  cursor: pointer;
+  padding: 5px;
+}
+.post-header > .header-icon:hover {
+  border-radius: 50px;
+  background-color: rgba(11, 255, 255, 0.1);
+  color: #1da1f2;
+}
+.post-header > h4 {
+  flex: 1;
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  font-weight: 600 !important;
+}
+.post-header > h4 > p {
+  cursor: pointer;
+  margin-right: 10px;
+}
+.post-header span {
+  color: gray;
+  font-weight: 100;
+  font-size: 15px;
+}
+.post-header > h4 > p:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2.5px;
+}
+
+.post-header > h4 > span {
+  font-size: 14px;
+  font-weight: lighter;
+  color: gray;
+}
+
+.post-info > .post-body > img {
+  width: 100%;
+  border-radius: 30px;
+}
+.post-info > .post-body > p {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 8px;
+}
+.post-info > .post-body > p > .has-hashtag {
+  color: #1da1f2;
+}
+.post-info > .post-body > p > .has-hashtag:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+/* icons like and heaer and share  */
+
+.post-reactions-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 55px 1px 85px;
+}
+
+.post-reactions-btn > * {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 18px !important;
+}
+
+.post-reactions-btn > *:hover {
+  border-radius: 50px;
+  background-color: rgba(11, 255, 255, 0.1);
+  color: #1da1f2;
+}
