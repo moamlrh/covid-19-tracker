@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d public"
-  },
+    "deploy": "gh-pages -b master -d build"
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",
